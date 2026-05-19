@@ -8,8 +8,9 @@ from telegram.ext import (
 )
 from datetime import datetime
 
-TOKEN = "8917415626:AAFuOVMBQvmIi2okJYIppxublPlxXLrL5MU"
+import os
 
+TOKEN = os.getenv("TOKEN")
 CS_CODES = ["AB01", "AB02", "AB03", "AB04", "AB05", "AB07", "AB08"]
 
 data_harian = {}
